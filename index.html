@@ -3,15 +3,68 @@
 <head>
 	<meta charset="UTF-8">
 	<title>5e Spellbook</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<div class="list">
+	<main class="wrapper">
+		<section class="spellList">
+			<form class="listGrid searchForm">
+					<div class="sidebar">
+						<div class="pickClass">
+							<!-- <input type="checkbox" name="allClass" class="allClass" checked>All Classes<br> -->
+							<input type="checkbox" name="class" value="bard">Bard<br>
+							<input type="checkbox" name="class" value="cleric">Cleric<br>
+							<input type="checkbox" name="class" value="druid">Druid<br>
+							<input type="checkbox" name="class" value="paladin">Paladin<br>
+							<input type="checkbox" name="class" value="ranger">Ranger<br>
+							<input type="checkbox" name="class" value="sorcerer">Sorcerer<br>
+							<input type="checkbox" name="class" value="wizard">Wizard<br>
+						</div>
+					</div>
+
+					<div class="topbar">
+						<div class="pickLevel">
+							<!-- <input type="checkbox" name="allLevel" class="allLevel" checked>All Levels -->
+							<input type="checkbox" name="level" value="Cantrip">Cantrip
+							<input type="checkbox" name="level" value="1st-level">1st Level
+							<input type="checkbox" name="level" value="2nd-level">2nd Level
+							<input type="checkbox" name="level" value="3rd-level">3rd Level
+							<input type="checkbox" name="level" value="4th-level">4th Level
+							<input type="checkbox" name="level" value="5th-level">5th Level
+							<input type="checkbox" name="level" value="6th-level">6th Level
+							<input type="checkbox" name="level" value="7th-level">7th Level
+							<input type="checkbox" name="level" value="8th-level">8th Level
+							<input type="checkbox" name="level" value="9th-level">9th Level
+						</div>
+						
+						<div>
+							<input type="text" placeholder="Search for a spell" name="searchBar">
+							<input type="submit">
+						</div>
+					</div>
+
+			<div class="listDisplay">
+				<div class='listedSpellTitle'>
+					<span>Spell Name</span>	
+					<span>Spell School</span>	
+					<span>Page</span>	
+				</div>
+				<div id="displayedSpells">
+					<h2>Welcome, spellcaster...</h2>
+					<h3>Your spellbook is just warming up...</h3>
+					<!-- populate with spells from Search -->
+				</div>
+			</div>
+				</form>
 			
-	</div>
-	
-	<div class="spellDesc">
-		
-	</div>
+		</section>	
+
+		<section class="spellDisplay">
+			<div id="selectedSpell">
+				<!-- insert selected spell description here -->
+			</div>
+		</section>
+	</main>
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
