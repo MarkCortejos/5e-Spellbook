@@ -168,3 +168,13 @@ section {
 .descLine span {
      width: fit-content;
 }
+
+.konami {
+     display: none;
+     position:absolute;
+     height: 200px;
+     width: 200px;
+     top: 20%;
+     left: 25%;
+     z-index: 10;
+}
